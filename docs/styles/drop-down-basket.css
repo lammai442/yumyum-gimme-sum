@@ -4,8 +4,16 @@
 
 .overlay-background {
 	position: absolute;
-	height: 100%;
+	height: 100vh;
 	width: 100%;
+}
+
+.overlay-background__blur {
+	height: 100vh;
+	width: 100%;
+	background-color: white;
+	opacity: 50%;
+	filter: blur(10px); /* Du kan justera styrkan på blur-effekten */
 }
 
 .overlay-basket {
@@ -19,7 +27,6 @@
 	display: grid;
 	grid-template-rows: 30px 300px 1fr 1fr;
 }
-
 .overlay-basket__title {
 	text-align: center;
 	font-size: 1.8rem;

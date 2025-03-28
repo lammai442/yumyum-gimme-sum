@@ -146,7 +146,7 @@ function handleLoginClick() {
 		backBtn.id = 'backBtn';
 
 		let backSymbol = document.createElement('img');
-		backSymbol.src = '../assets/icons/back-symbol.svg';
+		backSymbol.src = 'assets/icons/back-symbol.svg';
 		backSymbol.alt = 'Navigate back symbol, an arrow pointing to the left';
 		backSymbol.classList.add('content-wrapper__back-btn-icon');
 

@@ -92,3 +92,9 @@
 .order-overview__total-tax {
 	text-transform: none;
 }
+
+.overview__title {
+	color: var(--white-bg-color);
+	font-size: 2rem;
+	text-align: center;
+}

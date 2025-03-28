@@ -1,5 +1,5 @@
 .leaf-background {
-	height: 100vh;
+	height: 1200px;
 	width: 100%;
 	background-image: url(../assets/bg-images/leafbg.svg);
 	background-color: var(--light-green-bg-color);
@@ -7,7 +7,7 @@
 
 .food-menu-container {
 	width: 100%;
-	margin-top: 2rem;
+	margin-top: 0.5rem;
 	border-radius: 10px;
 	color: var(--white-text-color);
 	background-color: var(--dark-grey-bg-color);
@@ -32,7 +32,7 @@
 
 .food-menu-container__card-container {
 	overflow-y: auto;
-	height: 55vh;
+	height: 47vh;
 }
 
 .food-menu-container__inner-grid {

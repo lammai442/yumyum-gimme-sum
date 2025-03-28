@@ -29,7 +29,8 @@ function openDropDownBasket() {
 // Funktion för att skapa hela varukorgen
 function createOverlayDropDownBasket() {
 	const overlayBasketHTML = `
-    <section id="overlayBackground" class="overlay-background">
+		<section id="overlayBackground" class="overlay-background">
+			<figure id="overlayBackgroundBlur" class="overlay-background__blur"></figure>
             <article id="overlayBasket" class="overlay-basket">
                 <h2 id="overlayBasketTitle" class="overlay-basket__title">
                     Översikt varukorg
@@ -304,11 +305,14 @@ function emptyBasketListener() {
 // Funktion för att stänga basket när man clickar utanför basket
 function closeOverlayBasketListener() {
 	const overlayBackgroundRef = document.querySelector('#overlayBackground');
+	const overlayBackgroundBlurRef = document.querySelector(
+		'#overlayBackgroundBlur'
+	);
 
 	// Lyssnare på bakgrunden som är osynlig och täcker hela sidan bakom basketelementet
-	overlayBackgroundRef.addEventListener('click', (event) => {
+	overlayBackgroundBlurRef.addEventListener('click', (event) => {
 		// Vid klick på den osynliga bakgrundsbilden så raderas hela basketelementet
-		if (event.target === overlayBackgroundRef) {
+		if (event.target === overlayBackgroundBlurRef) {
 			overlayBackgroundRef.remove();
 		}
 	});
