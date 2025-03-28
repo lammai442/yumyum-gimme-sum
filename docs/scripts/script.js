@@ -21,8 +21,8 @@ const path = window.location.pathname;
 if (
 	path === '/' ||
 	path === '/index.html' ||
-	path === '/yum-yum-gimme-sum/' ||
-	window.location.pathname === '/yum-yum-gimme-sum/index.html'
+	path === '/yumyum-gimme-sum/' ||
+	window.location.pathname === '/yumyum-gimme-sum/index.html'
 ) {
 	runIndexPage();
 	console.log('index.html');
