@@ -1,5 +1,5 @@
 import { renderHamburgerMenu } from './components/navMenu.js';
-import { runIndexPage } from '/pages/indexPage.js';
+import { runIndexPage } from 'pages/indexPage.js';
 import { runAboutPage } from './pages/aboutPage.js';
 import { runEtaPage } from './pages/etaPage.js';
 import { runHistoryPage } from './pages/historyPage.js';
@@ -24,8 +24,8 @@ if (
 	path === '/yumyum-gimme-sum/' ||
 	window.location.pathname === '/yumyum-gimme-sum/index.html'
 ) {
-	runIndexPage();
 	console.log('index.html');
+	runIndexPage();
 } else if (
 	path === '/about.html' ||
 	window.location.pathname === '/yum-yum-gimme-sum/about.html'
