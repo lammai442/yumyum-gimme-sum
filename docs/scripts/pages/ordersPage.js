@@ -90,7 +90,7 @@ function runOrdersPage() {
 		// Anropar funktion som tömmer hela basket
 		emptyBasket();
 
-		window.location.href = '/pages/eta.html'; // Omdirigera till orderbekräftelsesidan
+		window.location.href = 'pages/eta.html'; // Omdirigera till orderbekräftelsesidan
 	});
 }
 
