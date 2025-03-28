@@ -18,7 +18,7 @@ function renderHamburgerMenu() {
             >
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <a id="homeLink" class="menu__link" href="./index.html" aria-label="Navigate to home page">
+                        <a id="homeLink" class="menu__link" href="pages/menu.html" aria-label="Navigate to home page">
                             Hem
                         </a>
                     </li>

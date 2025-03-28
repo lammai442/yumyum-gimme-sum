@@ -18,12 +18,7 @@ function highlightActiveBurgerLink() {
 	// Lista över sidor och deras motsvarande ID:n i menyn
 	const menuLinks = [
 		{
-			path: [
-				'index.html',
-				'/',
-				'/Exam-MovieDataBase/',
-				'/Exam-MovieDataBase/index.html',
-			],
+			path: ['/pages/menu.html', '/'],
 			id: 'homeLink',
 		},
 		{ path: ['/menu.html', '/pages/menu.html'], id: 'menuLink' },
@@ -50,18 +45,6 @@ function highlightActiveBurgerLink() {
 		}
 	});
 }
-
-// do not need this function anymore, but keeping it just in case for now
-/* export function clickLoginBtn() {
-    let loginButton = document.getElementById('loginBtn');
-
-    loginButton.addEventListener('click', () => {
-        window.location.href = '../pages/menu.html';
-        console.log(
-            'navigated to main.html page after clicking on login button'
-        );
-    });
-} */
 
 function doesBasketItemCountsExist() {
 	let basketItemCounts = getDataFromLocalStorage('basketCount');

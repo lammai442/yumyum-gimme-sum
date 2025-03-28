@@ -1,0 +1,27 @@
+.mobile-mockup {
+	width: 300px; /* Justera för en mindre mockup */
+	height: 600px; /* Anpassad höjd */
+	border-radius: 30px;
+	border: 8px solid #000;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	position: relative;
+	margin: auto;
+}
+
+.iframe-wrapper {
+	width: 400px; /* Originalbredd på mobilversionen */
+	height: 800px; /* Originalhöjd */
+	transform: scale(0.75); /* Skala ner till 75% */
+	transform-origin: top center; /* Ändra från 'top left' till 'top center' */
+	position: absolute;
+	top: 0;
+	left: 50%; /* Flytta utgångspunkten till mitten */
+	transform: translateX(-50%) scale(0.75); /* Centrera och skala */
+}
+
+.iframe-wrapper iframe {
+	width: 100%;
+	height: 100%;
+	border: none;
+}
