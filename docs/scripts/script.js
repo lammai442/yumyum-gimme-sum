@@ -1,5 +1,5 @@
 import { renderHamburgerMenu } from './components/navMenu.js';
-import { runIndexPage } from '../pages/indexPage.js';
+import { runIndexPage } from '/pages/indexPage.js';
 import { runAboutPage } from './pages/aboutPage.js';
 import { runEtaPage } from './pages/etaPage.js';
 import { runHistoryPage } from './pages/historyPage.js';
