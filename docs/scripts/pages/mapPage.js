@@ -15,7 +15,7 @@ function changeMap() {
 
 		// Bilden ändras beroende på vad man väljer i drop-down menyn.
 		const mapImgRef = document.querySelector('#mapImg');
-		mapImgRef.src = `../../../assets/maps/${selection.target.value}.jpg`;
+		mapImgRef.src = `assets/maps/${selection.target.value}.jpg`;
 
 		// Letar upp textinnehållet i det man väljer
 		const selectionText =
