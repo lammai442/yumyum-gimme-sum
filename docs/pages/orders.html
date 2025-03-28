@@ -3,8 +3,17 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="../styles/style.css" />
-		<script type="module" src="../scripts/script.js"></script>
+		<base href="/yumyum-gimme-sum/" />
+		<script>
+			if (
+				window.location.hostname === '127.0.0.1' ||
+				window.location.hostname === 'localhost'
+			) {
+				document.querySelector('base').setAttribute('href', '/');
+			}
+		</script>
+		<link rel="stylesheet" href="styles/style.css" />
+		<script type="module" src="scripts/script.js"></script>
 		<title>Order | Yum Yum Gimme Sum Wonton Food Truck</title>
 	</head>
 	<body>
