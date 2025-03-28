@@ -121,7 +121,7 @@ export function emptyBasketOrdersPage() {
 	if (checkoutButton) {
 		checkoutButton.textContent = 'Gå till menyn';
 		checkoutButton.addEventListener('click', () => {
-			window.location.href = '/pages/menu.html';
+			window.location.href = 'pages/menu.html';
 		});
 	}
 }
@@ -135,7 +135,7 @@ function handleRegisterIndexClick() {
 }
 function buttonAddLinkToMenu(htmlRef) {
 	htmlRef.addEventListener('click', () => {
-		window.location.href = '/pages/menu.html';
+		window.location.href = 'pages/menu.html';
 	});
 }
 
