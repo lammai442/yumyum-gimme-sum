@@ -28,7 +28,7 @@ function checkIfLoggedIn() {
 
 	// if you are logged in, you navigate to menu.html directly before you see the index page
 	if (isLoggedIn) {
-		window.location.href = 'menu.html';
+		window.location.href = 'pages/menu.html';
 	}
 }
 
@@ -231,7 +231,7 @@ function handleRegisterIndexClick() {
 	document
 		.getElementById('registerBtn')
 		.addEventListener('click', function () {
-			window.location.href = 'register.html';
+			window.location.href = 'pages/register.html';
 		});
 }
 
