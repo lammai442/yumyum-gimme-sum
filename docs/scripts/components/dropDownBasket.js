@@ -334,7 +334,7 @@ function isBasketEmpty() {
 		}
 		// Om det finns saker i basket så länkas man vidare till orders.html
 		else {
-			window.location.href = '/pages/orders.html';
+			window.location.href = 'pages/orders.html';
 			runOrdersPage();
 		}
 	});
