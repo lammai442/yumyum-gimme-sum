@@ -83,7 +83,7 @@ export async function registerUser(event, apiUsers) {
 
 	// Navigera till meny.html efter några sekunder (så användaren hinner se meddelandet)
 	setTimeout(() => {
-		window.location.href = 'menu.html'; // Navigera till meny.html
+		window.location.href = 'pages/menu.html'; // Navigera till meny.html
 	}, 2000); // Vänta 2 sekunder innan navigeringen
 }
 

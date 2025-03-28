@@ -124,7 +124,7 @@ function handleRegisterIndexClick() {
 	document
 		.getElementById('registerBtn')
 		.addEventListener('click', function () {
-			window.location.href = 'register.html';
+			window.location.href = 'pages/register.html';
 		});
 }
 function buttonAddLinkToMenu(htmlRef) {
