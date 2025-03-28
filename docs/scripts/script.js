@@ -28,7 +28,7 @@ if (
 	runIndexPage();
 } else if (
 	path === '/about.html' ||
-	window.location.pathname === '/yum-yum-gimme-sum/about.html'
+	window.location.pathname === '/yumyum-gimme-sum/about.html'
 ) {
 	checkUserStatus();
 	runAboutPage();
@@ -37,7 +37,7 @@ if (
 	console.log('about.html');
 } else if (
 	path === '/eta.html' ||
-	window.location.pathname === '/yum-yum-gimme-sum/eta.html'
+	window.location.pathname === '/yumyum-gimme-sum/eta.html'
 ) {
 	checkUserStatus();
 	runEtaPage();
@@ -46,7 +46,7 @@ if (
 	console.log('eta.html');
 } else if (
 	path === '/history.html' ||
-	window.location.pathname === '/yum-yum-gimme-sum/history.html'
+	window.location.pathname === '/yumyum-gimme-sum/history.html'
 ) {
 	checkUserStatus();
 	runHistoryPage();
@@ -55,7 +55,7 @@ if (
 	console.log('history.html');
 } else if (
 	path === '/map.html' ||
-	window.location.pathname === '/yum-yum-gimme-sum/map.html'
+	window.location.pathname === '/yumyum-gimme-sum/map.html'
 ) {
 	checkUserStatus();
 	runMapPage();
@@ -64,7 +64,7 @@ if (
 	console.log('map.html');
 } else if (
 	path === '/menu.html' ||
-	window.location.pathname === '/yum-yum-gimme-sum/menu.html'
+	window.location.pathname === '/yumyum-gimme-sum/menu.html'
 ) {
 	checkUserStatus();
 	runMenuPage();
@@ -73,7 +73,7 @@ if (
 	console.log('menu.html');
 } else if (
 	path === '/order-overview.html' ||
-	window.location.pathname === '/yum-yum-gimme-sum/order-overview.html'
+	window.location.pathname === '/yumyum-gimme-sum/order-overview.html'
 ) {
 	checkUserStatus();
 	runOrderOverviewPage();
@@ -81,7 +81,7 @@ if (
 	console.log('order-overview.html');
 } else if (
 	path === '/orders.html' ||
-	window.location.pathname === '/yum-yum-gimme-sum/orders.html'
+	window.location.pathname === '/yumyum-gimme-sum/orders.html'
 ) {
 	checkUserStatus();
 	runOrdersPage();
@@ -90,7 +90,7 @@ if (
 	console.log('orders.html');
 } else if (
 	path === '/profile.html' ||
-	window.location.pathname === '/yum-yum-gimme-sum/profile.html'
+	window.location.pathname === '/yumyum-gimme-sum/profile.html'
 ) {
 	checkUserStatus();
 	runProfilePage();
@@ -99,7 +99,7 @@ if (
 	console.log('profile.html');
 } else if (
 	path === '/receipt.html' ||
-	window.location.pathname === '/yum-yum-gimme-sum/receipt.html'
+	window.location.pathname === '/yumyum-gimme-sum/receipt.html'
 ) {
 	checkUserStatus();
 	runReceiptPage();
@@ -108,14 +108,14 @@ if (
 	console.log('receipt.html');
 } else if (
 	path === '/register.html' ||
-	window.location.pathname === '/yum-yum-gimme-sum/register.html'
+	window.location.pathname === '/yumyum-gimme-sum/register.html'
 ) {
 	console.log('register.html');
 
 	runRegisterPage();
 } else if (
 	path === '/editMenu.html' ||
-	window.location.pathname === '/yum-yum-gimme-sum/editMenu.html'
+	window.location.pathname === '/yumyum-gimme-sum/editMenu.html'
 ) {
 	checkUserStatus();
 	runEditMenuPage();
