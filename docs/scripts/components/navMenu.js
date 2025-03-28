@@ -23,32 +23,32 @@ function renderHamburgerMenu() {
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a id="menuLink" class="menu__link" href="./menu.html" aria-label="Navigate to menu page">
+                        <a id="menuLink" class="menu__link" href="pages/menu.html" aria-label="Navigate to menu page">
                             Meny
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a id="ordersLink" class="menu__link" href="./orders.html" aria-label="Navigate to orders page">
+                        <a id="ordersLink" class="menu__link" href="pages/orders.html" aria-label="Navigate to orders page">
                             Min beställning
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a id="historyLink" class="menu__link" href="./history.html" aria-label="Navigate to purchase history page">
+                        <a id="historyLink" class="menu__link" href="pages/history.html" aria-label="Navigate to purchase history page">
                             Historik köp
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a id="profileLink" class="menu__link" href="./profile.html" aria-label="Navigate to profile page">
+                        <a id="profileLink" class="menu__link" href="pages/profile.html" aria-label="Navigate to profile page">
                             Profil
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a id="mapLink" class="menu__link" href="./map.html" aria-label="Navigate to map page">
+                        <a id="mapLink" class="menu__link" href="pages/map.html" aria-label="Navigate to map page">
                             Truck karta
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a id="aboutLink" class="menu__link" href="./about.html" aria-label="Navigate to about us page">
+                        <a id="aboutLink" class="menu__link" href="pages/about.html" aria-label="Navigate to about us page">
                             Om oss
                         </a>
                     </li>
