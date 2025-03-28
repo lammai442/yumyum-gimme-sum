@@ -85,7 +85,7 @@ function createExpandedContent(truck) {
 	innerContainerHTML.innerHTML = `
 				<img 
 					class="order-overview__logo"
-					src="../assets/icons/logo-red.svg"
+					src="assets/icons/logo-red.svg"
 					alt="YYGS logo" />
 				<section class="order-overview__text-container">
 				<p class="order-overview__truck-name">${truck.seller}</p>
