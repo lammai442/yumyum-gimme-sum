@@ -247,7 +247,7 @@ function createEmptyBasketElem() {
             <img
                 id="emptyBasketImg"
                 class="empty-basket-box__trash-can"
-                src="../assets/icons/trash-can.svg"
+                src="../../assets/icons/trash-can.svg"
                 alt="Bin icon"
             />
             <p

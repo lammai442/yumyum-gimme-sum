@@ -17,12 +17,12 @@ function clickEtaBtns() {
 
 	// Event listener on both buttons to navigate to the correct page
 	newOrderBtn.addEventListener('click', () => {
-		window.location.href = '../pages/menu.html';
+		window.location.href = 'pages/menu.html';
 		console.log('Navigated to menu.html after clicking New Order button');
 	});
 
 	receiptBtn.addEventListener('click', () => {
-		window.location.href = '../pages/receipt.html';
+		window.location.href = 'pages/receipt.html';
 		console.log(
 			'Navigated to receipt.html after clicking Show Receipt button'
 		);
@@ -91,15 +91,3 @@ function displayFoodTruck() {
 
 	etaFoodTruckContentRef.textContent = `${location} - ${seller}`;
 }
-
-// WROTE THIS DIRECTLY INTO CONSOLE TO TEST MY FUNCTIONS
-
-// localStorage.setItem('basket', JSON.stringify({
-//     id: '#4kjwsdf234k',
-//     foodTruck: '#1241',
-//     items: [
-//         { id: 1, namn: 'Paris', amount: 2, price: 19 },
-//         { id: 2, namn: 'Namn', amount: 2, price: 19 },
-//         { id: 3, namn: 'Name', amount: 2, price: 19 }
-//     ]
-// })); ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
