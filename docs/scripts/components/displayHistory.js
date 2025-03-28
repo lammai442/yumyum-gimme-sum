@@ -48,7 +48,7 @@ export function displayReceipts() {
 
 		const receiptLogo = document.createElement('section');
 		receiptLogo.classList.add('receipt__logo', 'receipt__logo--resize');
-		receiptLogo.innerHTML = `<img src="../assets/icons/logo-red.svg" alt="Logo">`;
+		receiptLogo.innerHTML = `<img src="assets/icons/logo-red.svg" alt="Logo">`;
 		receiptDetails.appendChild(receiptLogo);
 
 		const receiptInfoExpanded = document.createElement('section');
