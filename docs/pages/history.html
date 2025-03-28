@@ -3,9 +3,18 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <base href="/yumyum-gimme-sum/" />
+		<script>
+			if (
+				window.location.hostname === '127.0.0.1' ||
+				window.location.hostname === 'localhost'
+			) {
+				document.querySelector('base').setAttribute('href', '/');
+			}
+		</script>
         <title>Yum Yum Gimme sum</title>
-        <link rel="stylesheet" href="../styles/style.css" />
-        <script type="module" src="../scripts/script.js"></script>
+        <link rel="stylesheet" href="styles/style.css" />
+        <script type="module" src="scripts/script.js"></script>
     </head>
     <body class="content__main history-page">
          <div class="content-wrapper content-wrapper-history">
@@ -21,10 +30,10 @@
                         id="navMenuLines"
                     ></span>
                 </button>
-                <a href="menu.html" aria-label="Go to landing page">
+                <a href="pages/menu.html" aria-label="Go to landing page">
                     <img
                         class="header__logo"
-                        src="../assets/icons/logo.svg"
+                        src="assets/icons/logo.svg"
                         alt="Image logo"
                     />
                 </a>
@@ -35,7 +44,7 @@
                 >
                     <img
                         class="header__basket-icon"
-                        src="../assets/icons/basket.svg"
+                        src="assets/icons/basket.svg"
                         alt="Basket icon"
                     />
                 </button>
