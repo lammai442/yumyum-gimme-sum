@@ -56,18 +56,18 @@ function handleLoginClick() {
 		}
 
 		//Fullösning för att åtminstone få in Jesper som admin
-		const jesperAdmin = [
+		const adminAccount = [
 			{
-				email: 'jesper123@airbean.com',
-				password: 'fisnils123',
+				email: 'adam@gmail.com',
+				password: 'food',
 				profile_image: 'https://randomuser.me/api/portraits/men/1.jpg',
 				receipts: [],
 				role: 'admin',
-				username: 'jesperdaking',
+				username: 'adam',
 			},
 		];
 		if (users.length === 0) {
-			saveDataToLocalStorage('users', jesperAdmin);
+			saveDataToLocalStorage('users', adminAccount);
 		}
 
 		const allUsers = [...users, ...apiUsers]; // Slår samman användarna

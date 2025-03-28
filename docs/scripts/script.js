@@ -17,7 +17,7 @@ import { checkUserStatus } from './components/validateUser.js';
 console.log('Script.js loaded');
 
 const path = window.location.pathname;
-// runIndexPage();
+
 if (
 	path === '/' ||
 	path === '/index.html' ||
@@ -28,6 +28,7 @@ if (
 	runIndexPage();
 } else if (
 	path === '/about.html' ||
+	window.location.pathname === '/pages/about.html' ||
 	window.location.pathname === '/yumyum-gimme-sum/about.html' ||
 	window.location.pathname === '/yumyum-gimme-sum/pages/about.html'
 ) {
@@ -38,6 +39,7 @@ if (
 	console.log('about.html');
 } else if (
 	path === '/eta.html' ||
+	window.location.pathname === '/pages/eta.html' ||
 	window.location.pathname === '/yumyum-gimme-sum/eta.html' ||
 	window.location.pathname === '/yumyum-gimme-sum/pages/eta.html'
 ) {
@@ -48,6 +50,7 @@ if (
 	console.log('eta.html');
 } else if (
 	path === '/history.html' ||
+	window.location.pathname === '/pages/history.html' ||
 	window.location.pathname === '/yumyum-gimme-sum/history.html' ||
 	window.location.pathname === '/yumyum-gimme-sum/pages/history.html'
 ) {
@@ -58,6 +61,7 @@ if (
 	console.log('history.html');
 } else if (
 	path === '/map.html' ||
+	window.location.pathname === '/pages/map.html' ||
 	window.location.pathname === '/yumyum-gimme-sum/map.html' ||
 	window.location.pathname === '/yumyum-gimme-sum/pages/map.html'
 ) {
@@ -68,6 +72,7 @@ if (
 	console.log('map.html');
 } else if (
 	path === '/menu.html' ||
+	window.location.pathname === '/pages/menu.html' ||
 	window.location.pathname === '/yumyum-gimme-sum/menu.html' ||
 	window.location.pathname === '/yumyum-gimme-sum/pages/menu.html'
 ) {
@@ -78,6 +83,7 @@ if (
 	console.log('menu.html');
 } else if (
 	path === '/order-overview.html' ||
+	window.location.pathname === '/pages/order-overview.html' ||
 	window.location.pathname === '/yumyum-gimme-sum/order-overview.html' ||
 	window.location.pathname === '/yumyum-gimme-sum/pages/order-overview.html'
 ) {
@@ -87,6 +93,7 @@ if (
 	console.log('order-overview.html');
 } else if (
 	path === '/orders.html' ||
+	window.location.pathname === '/pages/orders.html' ||
 	window.location.pathname === '/yumyum-gimme-sum/orders.html' ||
 	window.location.pathname === '/yumyum-gimme-sum/pages/orders.html'
 ) {
@@ -97,6 +104,7 @@ if (
 	console.log('orders.html');
 } else if (
 	path === '/profile.html' ||
+	window.location.pathname === '/pages/profile.html' ||
 	window.location.pathname === '/yumyum-gimme-sum/profile.html' ||
 	window.location.pathname === '/yumyum-gimme-sum/pages/profile.html'
 ) {
@@ -107,6 +115,7 @@ if (
 	console.log('profile.html');
 } else if (
 	path === '/receipt.html' ||
+	window.location.pathname === '/pages/receipt.html' ||
 	window.location.pathname === '/yumyum-gimme-sum/receipt.html' ||
 	window.location.pathname === '/yumyum-gimme-sum/pages/receipt.html'
 ) {
@@ -117,6 +126,7 @@ if (
 	console.log('receipt.html');
 } else if (
 	path === '/register.html' ||
+	window.location.pathname === '/pages/register.html' ||
 	window.location.pathname === '/yumyum-gimme-sum/register.html' ||
 	window.location.pathname === '/yumyum-gimme-sum/pages/register.html'
 ) {
@@ -125,6 +135,7 @@ if (
 	runRegisterPage();
 } else if (
 	path === '/editMenu.html' ||
+	window.location.pathname === '/pages/editMenu.html' ||
 	window.location.pathname === '/yumyum-gimme-sum/editMenu.html' ||
 	window.location.pathname === '/yumyum-gimme-sum/pages/editMenu.html'
 ) {
