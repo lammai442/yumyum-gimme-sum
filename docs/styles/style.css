@@ -1,17 +1,17 @@
 /* style imports */
-@import url('/styles/eta.css');
-@import url('/styles/map.css');
-@import url('/styles/about.css');
-@import url('/styles/indexpage.css');
-@import url('/styles/receipt.css');
-@import url('/styles/menupage.css');
-@import url('/styles/orderspage.css');
-@import url('/styles/drop-down-basket.css');
-@import url('/styles/profile.css');
-@import url('/styles/register.css');
-@import url('/styles/order-overview.css');
-@import url('/styles/history.css');
-@import url('/styles/editMeny.css');
+@import url('./eta.css');
+@import url('./map.css');
+@import url('./about.css');
+@import url('./indexpage.css');
+@import url('./receipt.css');
+@import url('./menupage.css');
+@import url('./orderspage.css');
+@import url('./drop-down-basket.css');
+@import url('./profile.css');
+@import url('./register.css');
+@import url('./order-overview.css');
+@import url('./history.css');
+@import url('./editMeny.css');
 
 /* Font imports */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap');
