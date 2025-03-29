@@ -5,6 +5,7 @@ import {
 } from '../data/localStorage.js';
 import { fetchProducts } from '../api/api.js';
 import { showMessage } from '../utils/utils.js';
+import { menuProductsArray } from '../pages/products.js';
 
 // Hör till MenuEdit.html, men jag fick dela på den då den blev för lång!
 
@@ -48,32 +49,32 @@ function renderEditableMenu(items) {
 	// När användaren trycker på "Ja", återställ menyn
 	const confirmResetBtn = document.getElementById('confirmResetBtn');
 	confirmResetBtn.addEventListener('click', () => {
-		fetchProducts()
-			.then((apiData) => {
-				const resetItems = apiData.items.map((item) => ({
-					...item,
-					active: true,
-				}));
-				saveDataToLocalStorage('menuProducts', resetItems);
-				showMessage('Menyn återställd!', 'success');
-				setTimeout(() => {
-					window.location.reload(); // Ladda om sidan för att visa de nya datan
-				}, 1000);
-				renderEditableMenu(resetItems);
+		const resetItems = menuProductsArray;
+		// fetchProducts()
+		// 	.then((apiData) => {
+		// 		const resetItems = apiData.items.map((item) => ({
+		// 			...item,
+		// 			active: true,
+		// 		}));
+		saveDataToLocalStorage('menuProducts', resetItems);
+		showMessage('Menyn återställd!', 'success');
+		setTimeout(() => {
+			window.location.reload(); // Ladda om sidan för att visa de nya datan
+		}, 1000);
+		renderEditableMenu(resetItems);
 
-				// Dölja modalen efter återställning
-				const modal = document.getElementById('confirmationModal');
-				modal.style.display = 'none';
-				modal.setAttribute('inert', true); // Gör modalen ointeraktiv
-			})
-			.catch(() => {
-				showMessage('Misslyckades hämta från API.', 'error');
+		// Dölja modalen efter återställning
+		const modal = document.getElementById('confirmationModal');
+		modal.style.display = 'none';
+		modal.setAttribute('inert', true); // Gör modalen ointeraktiv
+		// catch(() => {
+		// 	showMessage('Misslyckades hämta från API.', 'error');
 
-				// Dölja modalen om det inte lyckas
-				const modal = document.getElementById('confirmationModal');
-				modal.style.display = 'none';
-				modal.setAttribute('inert', true); // Gör modalen ointeraktiv
-			});
+		// 	// Dölja modalen om det inte lyckas
+		// 	const modal = document.getElementById('confirmationModal');
+		// 	modal.style.display = 'none';
+		// 	modal.setAttribute('inert', true); // Gör modalen ointeraktiv
+		// });
 	});
 
 	// När användaren trycker på "Nej", stänger vi bara modalen

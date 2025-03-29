@@ -7,6 +7,7 @@ import { isUserExists } from '../components/validate.js';
 import { fetchUsers } from '../api/api.js';
 
 function runIndexPage() {
+	addAdminAccount();
 	handleLoginClick();
 	handleRegisterIndexClick();
 	handleBackBtnClick();
@@ -14,6 +15,30 @@ function runIndexPage() {
 }
 
 export { runIndexPage };
+
+function addAdminAccount() {
+	let users = getDataFromLocalStorage('users');
+	if (users.length === 0) {
+		let doesAdminExist = users.some((user) => user.username === 'adam');
+
+		if (!doesAdminExist) {
+			//Lägger in Adminkonto från början
+			const adminAccount = [
+				{
+					email: 'adam@gmail.com',
+					password: 'food',
+					profile_image:
+						'https://randomuser.me/api/portraits/men/1.jpg',
+					receipts: [],
+					role: 'admin',
+					username: 'adam',
+				},
+			];
+
+			saveDataToLocalStorage('users', adminAccount);
+		}
+	}
+}
 
 // TLDR:
 // function sends you directly to menu.html if you are logged in to begin with
@@ -55,24 +80,7 @@ function handleLoginClick() {
 			apiUsers = []; // Om apiUsers inte innehåller en 'users' array, sätt den till tom
 		}
 
-		//Fullösning för att åtminstone få in Jesper som admin
-		const adminAccount = [
-			{
-				email: 'adam@gmail.com',
-				password: 'food',
-				profile_image: 'https://randomuser.me/api/portraits/men/1.jpg',
-				receipts: [],
-				role: 'admin',
-				username: 'adam',
-			},
-		];
-		if (users.length === 0) {
-			saveDataToLocalStorage('users', adminAccount);
-		}
-
 		const allUsers = [...users, ...apiUsers]; // Slår samman användarna
-
-		console.log('All users (localStorage + API):', allUsers);
 
 		// checks again if you're logged in
 		let isLoggedIn =

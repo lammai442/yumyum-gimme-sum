@@ -2,6 +2,7 @@ import { fetchProducts } from '../api/api.js';
 import { getDataFromLocalStorage } from '../data/localStorage.js';
 import { addToBasket } from '../components/addToBasket.js';
 import { doesBasketItemCountsExist } from '../utils/utils.js';
+import { menuProducts } from './products.js';
 
 // Huvudfunktionen för att köra meny-sidan
 async function runMenuPage() {
@@ -17,8 +18,9 @@ async function runMenuPage() {
 		const activeItems = localProducts.filter((item) => item.active); // Filtrera bort inaktiva produkter
 		products = { items: activeItems }; // Sätt aktiva produkter
 	} else {
-		const apiData = await fetchProducts(); // Hämta data från API
-		products = { items: apiData.items }; // Sätt produkter från API
+		products = menuProducts;
+		// const apiData = await fetchProducts(); // Hämta data från API
+		// products = { items: apiData.items }; // Sätt produkter från API
 	}
 
 	// Skapa kort för produkterna
@@ -100,7 +102,7 @@ function createDipCard(products) {
 	// Skapa text för dipsåsen
 	const paragraphHTML = document.createElement('p');
 	paragraphHTML.classList.add('food-menu-container__food-title');
-	paragraphHTML.innerHTML = `<span>Dipsås</span><span class="dotted-line"></span><span>19 sek</span>`;
+	paragraphHTML.innerHTML = `<span>Dipsås</span><span class="dotted-line"></span><span>10 sek</span>`;
 
 	// Skapa lägg till-knappen för dipsåsen
 	const addDipButtonHTML = document.createElement('button');
