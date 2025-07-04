@@ -128,6 +128,7 @@ function handleLoginClick() {
 		nameField.classList.add('content-wrapper__name-field');
 		nameField.type = 'text';
 		nameField.setAttribute('aria-label', 'Input field for nickname');
+		nameField.value = 'adam';
 
 		let nameText = document.createElement('p');
 		nameText.classList.add('content-wrapper__name-heading');
@@ -137,6 +138,7 @@ function handleLoginClick() {
 		passwordField.classList.add('content-wrapper__password-field');
 		passwordField.type = 'password';
 		passwordField.setAttribute('aria-label', 'Input field for password');
+		passwordField.value = 'food';
 
 		let passwordText = document.createElement('p');
 		passwordText.classList.add('content-wrapper__password-heading');

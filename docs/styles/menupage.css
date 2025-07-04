@@ -1,6 +1,5 @@
 .leaf-background {
-	max-height: 800px;
-	width: 100%;
+	height: 850px;
 	background-image: url(../assets/bg-images/leafbg.svg);
 	background-color: var(--light-green-bg-color);
 }
@@ -32,7 +31,8 @@
 
 .food-menu-container__card-container {
 	overflow-y: auto;
-	height: 47vh;
+	scrollbar-width: none;
+	height: 50vh;
 }
 
 .food-menu-container__inner-grid {
