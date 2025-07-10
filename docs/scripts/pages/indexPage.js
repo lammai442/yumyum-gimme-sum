@@ -232,7 +232,7 @@ function showWelcomeMsg(username) {
 	// showing welcomeMsg for 2.5 sec before navigating to menu-page
 	setTimeout(() => {
 		window.location.href = 'pages/menu.html';
-	}, 2500);
+	}, 2000);
 }
 
 // TLDR:
