@@ -219,8 +219,8 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	height: 814px;
-	width: 100%;
+	height: 100vh;
+	width: 100vw;
 	background-image: url(../assets/bg-images/leafbg.svg);
 	background-color: var(--light-green-bg-color);
 }
