@@ -12,7 +12,7 @@
 }
 
 .content-wrapper__background-container {
-	/* height: 810px;
+	height: 810px;
 	width: 100%;
 	background-image: url('../assets/hero/hero-a-blur.jpg');
 	background-size: cover;
@@ -20,16 +20,15 @@
 	background-repeat: no-repeat;
 	position: absolute;
 	z-index: -1;
-	background-color: red; */
-	display: none;
+	background-color: red;
 }
-
+/* 
 .background__img {
 	position: absolute;
 	z-index: -1;
 	height: 811px;
 	width: 100%;
-}
+} */
 
 .content-wrapper__heading {
 	font-weight: 600;
@@ -53,6 +52,7 @@
 	flex-direction: column;
 	align-items: center;
 	gap: 2rem;
+	scrollbar-width: none;
 }
 
 .content-wrapper__logo {
